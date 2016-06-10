@@ -23,8 +23,8 @@
  */
 namespace Mngez\Facebook;
 
-use Facebook\Entities\AccessToken;
-use Facebook\Entities\SignedRequest;
+use Mngez\facebook\Entities\AccessToken;
+use Mngez\facebook\SignedRequest;
 
 /**
  * Class FacebookSession
@@ -71,7 +71,7 @@ class FacebookSession
    */
   public function __construct($accessToken, SignedRequest $signedRequest = null)
   {
-    $this->accessToken = $accessToken instanceof AccessToken ? $accessToken : new AccessToken($accessToken);
+    $this->accessToken = $accessToken instanceof AccessToken ? $accessToken : new Mngez\facebook\AccessToken($accessToken);
     $this->signedRequest = $signedRequest;
   }
 
