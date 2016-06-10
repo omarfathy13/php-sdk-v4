@@ -1,7 +1,6 @@
 {
     "name": "mngez/php-sdk-v4",
     "description": " SDK for PHP",
-    "keywords": "",
     "type": "library",
     "homepage": "https://github.com/facebook/facebook-php-sdk-v4",
     "license": "Facebook Platform",
